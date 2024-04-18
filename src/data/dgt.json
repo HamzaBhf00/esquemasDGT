@@ -1,0 +1,43 @@
+[
+    {
+      "tema": "Recetas",
+      "submenus": [
+        {
+          "titulo": "Tarta de Manzana",
+          "url_imagen": "https://ejemplo.com/imagen_tarta_manzana.jpg",
+          "nivel": "Intermedio"
+        },
+        {
+          "titulo": "Ensalada César",
+          "url_imagen": "https://ejemplo.com/imagen_ensalada_cesar.jpg",
+          "nivel": "Fácil"
+        }
+      ]
+    },
+    {
+      "tema": "Viajes",
+      "submenus": [
+        {
+          "titulo": "París",
+          "url_imagen": "https://ejemplo.com/imagen_paris.jpg",
+          "nivel": "Avanzado"
+        },
+        {
+          "titulo": "Tokio",
+          "url_imagen": "https://ejemplo.com/imagen_tokio.jpg",
+          "nivel": "Intermedio"
+        }
+      ]
+    },
+    {
+      "tema": "Deportes",
+      "submenus": [
+        {
+          "titulo": "Fútbol",
+          "url_imagen": "https://ejemplo.com/imagen_futbol.jpg",
+          "nivel": "Fácil"
+        }
+      ]
+    }
+  ]
+  
