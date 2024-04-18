@@ -11,7 +11,12 @@
           "titulo": "Ensalada César",
           "url_imagen": "https://ejemplo.com/imagen_ensalada_cesar.jpg",
           "nivel": "Fácil"
-        }
+        },
+        {
+            "titulo": "Nuevo usuario",
+            "url_imagen": "https://ejemplo.com/imagen_ensalada_cesar.jpg",
+            "nivel": "Fácil"
+          }
       ]
     },
     {
