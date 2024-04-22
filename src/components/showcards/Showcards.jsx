@@ -3,7 +3,7 @@ import './showcards.css'
 
 function Showcards({ tema, titulo, nivel }) { //otra forma de escribir props de forma estructurada
     return (
-        <div>
+        <>
             <div className='flex justify-center'>
                 <a href="/" className=" block rounded-lg p-4 shadow-sm shadow-indigo-100">
                     <img
@@ -48,7 +48,7 @@ function Showcards({ tema, titulo, nivel }) { //otra forma de escribir props de 
                     </div>
                 </a>
             </div>
-        </div>
+        </>
     )
 }
 

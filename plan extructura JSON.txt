@@ -1,5 +1,0 @@
-Esta estructura facilita la organización de los elementos, 
-permitiendo que cada tema contenga una lista de submenús, 
-y cada submenú tenga su propio título, URL de imagen y nivel de dificultad. 
-De esta manera, cuando estés construyendo el menú y submenú en tu aplicación, 
-podrás acceder fácilmente a la información relevante para cada elemento.
