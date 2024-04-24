@@ -1,33 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import { React, useState } from 'react'
 import './sidebar.css'
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
 function SidebarMenu({ dataDGT, tituloClicked }) {
 
-    const [broken, setBroken] = useState(false)
+    const [toggled, setToggled] = useState(false)
+    const [broken, setBroken] = useState(window.matchMedia('(max-width: 800px)').matches)
 
-    useEffect(() => {
-        const handleResize = () => {
-            // Comprobar si la ventana es lo suficientemente pequeña como para considerarse rota
-            if (window.innerWidth < 800) { // Por ejemplo, 768 es el ancho típico de un pequeño dispositivo (como un teléfono)
-                setBroken(true);
-            } else {
-                setBroken(false);
-            }
-        };
 
-        // Agregar un event listener para manejar el cambio de tamaño de la ventana
-        window.addEventListener('resize', handleResize);
-
-        // Limpieza del event listener cuando el componente se desmonta
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     return (
         <>
-                <Sidebar>
+            <div className="side">
+                <Sidebar toggled={toggled} customBreakPoint="800px" onBreakPoint={setBroken} >
                     <h2 className="font-bold text-2xl text-center">EsquemasDGT</h2>
                     <Menu>
                         {dataDGT.map(data => (
@@ -41,9 +26,13 @@ function SidebarMenu({ dataDGT, tituloClicked }) {
                         ))}
                     </Menu>
                 </Sidebar>
-            
-            <div>
-                Fa Align Justify
+                <div>
+                    {broken && (
+                        <button className="" onClick={() => setToggled(!toggled)}>
+                            Toggle
+                        </button>
+                    )}
+                </div>
             </div>
         </>
     )

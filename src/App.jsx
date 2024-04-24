@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import { Showcards } from './components/showcards/Showcards'
-import { Sidebar } from './components/sidebar/Sidebar'
+import { SidebarMenu } from './components/sidebar/SidebarMenu'
 import dataDGT from './data/dgt.json'
 import "./app.css"
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <Sidebar dataDGT={dataDGT} tituloClicked={tituloClick} />
+        <SidebarMenu dataDGT={dataDGT} tituloClicked={tituloClick} />
 
         {selectedTitulo && dataDGT.map(data => { //Si la expresión de la izquierda es false, entonces no evalúa la expresión de la derecha
           return data.child.map(dataChild => {
